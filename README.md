@@ -1,2 +1,2 @@
-# ramyapillutla.github.io
+# rpillutla.github.io
 Repository for personal blog
