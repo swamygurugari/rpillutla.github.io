@@ -501,7 +501,7 @@ section h3.section-subheading {
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
 }
-
+ 
 .timeline>li .timeline-image h4 {
     margin-top: 12px;
     font-size: 10px;
