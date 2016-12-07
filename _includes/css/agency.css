@@ -303,7 +303,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-@media(min-width:1068px) {
+@media(min-width:100%) {
     header .intro-text {
         padding-top: 125px;
         padding-bottom: 10px;
