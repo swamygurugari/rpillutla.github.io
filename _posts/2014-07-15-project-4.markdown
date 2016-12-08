@@ -14,7 +14,7 @@ description: "This is a test post with spaces and new lines.<br>
 <br><br>
 
 Image test:
-<img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="Testing">
+<img src='img/portfolio/treehouse.png' class='img-responsive img-centered' alt='Testing'>
 <br>
 Here you go:<br><br>
 
