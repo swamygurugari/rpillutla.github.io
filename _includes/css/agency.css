@@ -269,7 +269,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-color: #808080
+    background-color: #808080;
     background-image: url('{{ site.baseurl }}/img/header_mcl.jpg');
     background-position: center center;
     background-repeat: none;
