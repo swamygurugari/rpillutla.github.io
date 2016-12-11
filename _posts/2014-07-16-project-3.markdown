@@ -1,5 +1,5 @@
 ---
-title: Golden
+title: Goldenn
 blurb: " "
 layout: default
 modal-id: 3
