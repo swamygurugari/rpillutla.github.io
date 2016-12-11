@@ -1,6 +1,6 @@
 ---
 title: TESTTESTTest
-subtitle: TEST
+blurb: TEST
 layout: default
 modal-id: 7
 date: 2015-07-15
