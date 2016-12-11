@@ -4,7 +4,7 @@ blurb: Graphic Design
 layout: default
 modal-id: 6
 date: 2014-07-15
-img: roundicons.png
+img: 
 thumbnail: minion_thumbnail.jpg
 alt: image-alt
 project-date: April 2014
