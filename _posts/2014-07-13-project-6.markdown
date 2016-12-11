@@ -1,6 +1,6 @@
 ---
 title: Round Round
-subtitle: Graphic Design
+blurb: Graphic Design
 layout: default
 modal-id: 6
 date: 2014-07-15
