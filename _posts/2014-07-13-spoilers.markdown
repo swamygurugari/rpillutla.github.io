@@ -1,5 +1,5 @@
 ---
-title: TESTTESTTest
+title: TESTTEST
 blurb: TEST
 layout: default
 modal-id: 7
