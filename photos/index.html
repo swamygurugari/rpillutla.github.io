@@ -4,7 +4,7 @@ layout: default
 {% include simple_header.html %}
 <div class="container">
 Test<br>
-{ % for photo in site.photos %}
+   {% for photo in site.photos %}
     <p>{{ photo.img }}</p>
-{ % endfor %}
+   {% endfor %}
 </div>
