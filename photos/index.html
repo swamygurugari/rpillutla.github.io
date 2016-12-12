@@ -3,5 +3,8 @@ layout: default
 ---
 {% include simple_header.html %}
 <div class="container">
-Test
+Test<br>
+{ % for photo in site.photos %}
+    <p>{{ site.photos }}</p>
+{ % end for %}
 </div>
