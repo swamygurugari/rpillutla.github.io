@@ -1,1 +1,8 @@
-
+---
+title: TESTTEST
+blurb: TEST
+layout: post
+date: 2015-07-15
+img: spoilers_thumbnail.jpg
+thumbnail: spoilers_thumbnail.jpg
+---
