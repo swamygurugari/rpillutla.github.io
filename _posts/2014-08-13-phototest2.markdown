@@ -1,0 +1,8 @@
+---
+title: phototest2
+blurb: TEST
+layout: post
+date: 2015-08-15
+img: escape.png
+category: photo
+---
