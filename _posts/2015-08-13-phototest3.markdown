@@ -1,0 +1,8 @@
+---
+title: phototest3
+blurb: TEST
+layout: post
+date: 2014-08-15
+img: golden-thumbnail.png
+category: photo
+---
