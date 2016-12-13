@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include simple_header.html %}
+<script>
 var photos = new Array();
 {% for photo in site.categories.photo %}
    im = new Image();
@@ -27,7 +28,7 @@ $('.image-container').empty().justifiedImages({
         },
         margin: 1
     });
-
+</script>
 <div class="image-container">
 <br>Testt<br>
    <!--img src="{{site.url}}/img/portfolio/{{ photo.img }}" class="img-responsive"-->
