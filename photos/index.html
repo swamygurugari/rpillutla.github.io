@@ -2,14 +2,46 @@
 layout: default
 ---
 {% include simple_header.html %}
-<script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>//need to add this script file
+<script src="prism/prism.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script type="text/javascript">
 var photos = new Array();
 {% for photo in site.categories.photo %}
    im = new Image();
    im.src = "{{site.url}}/img/portfolio/{{ photo.img }}";
    photos.push(im);
 {% endfor %}
-
+ var template = _.template('<div order="<%=photo.order%>" class="photo-container" id="photo-<%=photo.id%>" style="margin-right:<%=photo.marginRight%>px;"> \
+            <div title="View fullscreen" class="tooltip photo-zoom image-button"><i class="fa fa-expand"></i></div>\
+            <div title="Split this Moment from photos here onward" class="tooltip split-moment image-button"><i class="fa fa-code"></i></div>\
+            <div title="Undo Delete" class="undo-button image-button tooltip"><i class="fa fa-undo"></i></div>\
+            <img alt="<%=photo.title%>" class="image-thumb lazy" src="<%=photo.src%>" style="width:<%=photo.displayWidth%>px;height:<%=photo.displayHeight%>px;">\
+        </div>');
+        $(document).ready(function(){
+            $('#grid-form').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    url : 'https://api.flickr.com/services/rest/?jsoncallback=?',
+                    method: 'get',
+                    data : {
+                        method : 'flickr.photos.search',
+                        api_key : '2b76793b6787a09c14929811d2cef67e',
+                        text : 'potrait',
+                        sort : 'interestingness-desc',
+                        format : 'json',
+                        extras : 'url_t,url_s,url_q,url_m,url_n,url_z,url_c,url_l',
+                        per_page : $('#numPhotos').val()
+                    },
+                    dataType: 'json',
+                    success : function(data){
+                        showPhotos(data.photos.photo);
+                    }
+                })
+            });
+            $('#grid-form').submit();
+        });
+        var showPhotos = function(photos){
 
 $('.image-container').empty().justifiedImages({
         images : photos,
@@ -28,6 +60,7 @@ $('.image-container').empty().justifiedImages({
         },
         margin: 1
     });
+        }       
 </script>
 <div class="image-container">
 <br>Testt<br>
